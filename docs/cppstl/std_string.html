@@ -643,22 +643,23 @@ function main() {
 <h1><a class="toc-backref" href="#12">Procs</a></h1>
 <dl class="item">
 <a id="initCppString"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#initCppString"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">importcpp</span><span class="Other">:</span> <span class="StringLit">&quot;std::string()&quot;</span><span class="Other">,</span> <span class="Identifier">header</span><span class="Other">:</span> <span class="StringLit">&quot;&lt;string&gt;&quot;</span></span><span class="Other">.}</span></span></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#initCppString"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">constructor</span><span class="Other">,</span> <span class="Identifier">importcpp</span><span class="Other">:</span> <span class="StringLit">&quot;std::string()&quot;</span><span class="Other">,</span>
+                                  <span class="Identifier">header</span><span class="Other">:</span> <span class="StringLit">&quot;&lt;string&gt;&quot;</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 
 
 </dd>
 <a id="initCppString,CppString"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#initCppString%2CCppString"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Identifier">str</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">importcpp</span><span class="Other">:</span> <span class="StringLit">&quot;std::string(@)&quot;</span><span class="Other">,</span>
-    <span class="Identifier">header</span><span class="Other">:</span> <span class="StringLit">&quot;&lt;string&gt;&quot;</span></span><span class="Other">.}</span></span></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#initCppString%2CCppString"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Identifier">str</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">constructor</span><span class="Other">,</span>
+    <span class="Identifier">importcpp</span><span class="Other">:</span> <span class="StringLit">&quot;std::string(@)&quot;</span><span class="Other">,</span> <span class="Identifier">header</span><span class="Other">:</span> <span class="StringLit">&quot;&lt;string&gt;&quot;</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 
 
 </dd>
 <a id="initCppString,CppString,csize_t"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#initCppString%2CCppString%2Ccsize_t"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Identifier">str</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a><span class="Other">;</span> <span class="Identifier">pos</span><span class="Other">:</span> <span class="Identifier">csize_t</span><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+<dt><pre><span class="Keyword">proc</span> <a href="#initCppString%2CCppString%2Ccsize_t"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Identifier">str</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a><span class="Other">;</span> <span class="Identifier">pos</span><span class="Other">:</span> <span class="Identifier">csize_t</span><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">constructor</span><span class="Other">,</span>
     <span class="Identifier">importcpp</span><span class="Other">:</span> <span class="StringLit">&quot;std::string(@)&quot;</span><span class="Other">,</span> <span class="Identifier">header</span><span class="Other">:</span> <span class="StringLit">&quot;&lt;string&gt;&quot;</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
@@ -666,7 +667,7 @@ function main() {
 
 </dd>
 <a id="initCppString,CppString,csize_t,csize_t"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#initCppString%2CCppString%2Ccsize_t%2Ccsize_t"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Identifier">str</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a><span class="Other">;</span> <span class="Identifier">pos</span><span class="Other">,</span> <span class="Identifier">len</span><span class="Other">:</span> <span class="Identifier">csize_t</span><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+<dt><pre><span class="Keyword">proc</span> <a href="#initCppString%2CCppString%2Ccsize_t%2Ccsize_t"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Identifier">str</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a><span class="Other">;</span> <span class="Identifier">pos</span><span class="Other">,</span> <span class="Identifier">len</span><span class="Other">:</span> <span class="Identifier">csize_t</span><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">constructor</span><span class="Other">,</span>
     <span class="Identifier">importcpp</span><span class="Other">:</span> <span class="StringLit">&quot;std::string(@)&quot;</span><span class="Other">,</span> <span class="Identifier">header</span><span class="Other">:</span> <span class="StringLit">&quot;&lt;string&gt;&quot;</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
@@ -674,15 +675,15 @@ function main() {
 
 </dd>
 <a id="initCppString,cstring"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#initCppString%2Ccstring"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <span class="Identifier">cstring</span><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">importcpp</span><span class="Other">:</span> <span class="StringLit">&quot;std::string(@)&quot;</span><span class="Other">,</span>
-    <span class="Identifier">header</span><span class="Other">:</span> <span class="StringLit">&quot;&lt;string&gt;&quot;</span></span><span class="Other">.}</span></span></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#initCppString%2Ccstring"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <span class="Identifier">cstring</span><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">constructor</span><span class="Other">,</span>
+    <span class="Identifier">importcpp</span><span class="Other">:</span> <span class="StringLit">&quot;std::string(@)&quot;</span><span class="Other">,</span> <span class="Identifier">header</span><span class="Other">:</span> <span class="StringLit">&quot;&lt;string&gt;&quot;</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 
 
 </dd>
 <a id="initCppString,cstring,csize_t"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#initCppString%2Ccstring%2Ccsize_t"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <span class="Identifier">cstring</span><span class="Other">;</span> <span class="Identifier">n</span><span class="Other">:</span> <span class="Identifier">csize_t</span><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+<dt><pre><span class="Keyword">proc</span> <a href="#initCppString%2Ccstring%2Ccsize_t"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Identifier">s</span><span class="Other">:</span> <span class="Identifier">cstring</span><span class="Other">;</span> <span class="Identifier">n</span><span class="Other">:</span> <span class="Identifier">csize_t</span><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">constructor</span><span class="Other">,</span>
     <span class="Identifier">importcpp</span><span class="Other">:</span> <span class="StringLit">&quot;std::string(@)&quot;</span><span class="Other">,</span> <span class="Identifier">header</span><span class="Other">:</span> <span class="StringLit">&quot;&lt;string&gt;&quot;</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
@@ -690,7 +691,7 @@ function main() {
 
 </dd>
 <a id="initCppString,CppStrConstIterator,CppStrConstIterator"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#initCppString%2CCppStrConstIterator%2CCppStrConstIterator"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Identifier">first</span><span class="Other">,</span> <span class="Identifier">last</span><span class="Other">:</span> <a href="std_string.html#CppStrConstIterator"><span class="Identifier">CppStrConstIterator</span></a><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+<dt><pre><span class="Keyword">proc</span> <a href="#initCppString%2CCppStrConstIterator%2CCppStrConstIterator"><span class="Identifier">initCppString</span></a><span class="Other">(</span><span class="Identifier">first</span><span class="Other">,</span> <span class="Identifier">last</span><span class="Other">:</span> <a href="std_string.html#CppStrConstIterator"><span class="Identifier">CppStrConstIterator</span></a><span class="Other">)</span><span class="Other">:</span> <a href="std_string.html#CppString"><span class="Identifier">CppString</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">constructor</span><span class="Other">,</span>
     <span class="Identifier">importcpp</span><span class="Other">:</span> <span class="StringLit">&quot;std::string(@)&quot;</span><span class="Other">,</span> <span class="Identifier">header</span><span class="Other">:</span> <span class="StringLit">&quot;&lt;string&gt;&quot;</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
@@ -1800,7 +1801,7 @@ function main() {
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2021-04-08 12:52:55 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2021-04-12 09:32:59 UTC</small>
       </div>
     </div>
   </div>
